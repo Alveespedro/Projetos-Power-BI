@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "Report",
+    "displayName": "Projeto_mercado_acoes"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "d85384cc-d239-44ec-a070-89de85def19f"
+  }
+}

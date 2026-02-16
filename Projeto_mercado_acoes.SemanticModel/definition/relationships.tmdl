@@ -1,0 +1,5 @@
+relationship 705a57c4-c7d3-4070-959a-7774b2fbe0f3
+	joinOnDateBehavior: datePartOnly
+	fromColumn: StockMarket.Data
+	toColumn: LocalDateTable_4d48d12e-770b-4c6b-b8a9-20770e51c819.Date
+

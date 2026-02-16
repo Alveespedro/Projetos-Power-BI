@@ -1,0 +1,290 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.5.0/schema.json",
+  "name": "310409e11ee1975bf830",
+  "position": {
+    "x": 811.53846153846155,
+    "y": 394.23076923076923,
+    "z": 1000,
+    "height": 318.26923076923077,
+    "width": 460.57692307692304,
+    "tabOrder": 1000
+  },
+  "visual": {
+    "visualType": "tableEx",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "HierarchyLevel": {
+                  "Expression": {
+                    "Hierarchy": {
+                      "Expression": {
+                        "PropertyVariationSource": {
+                          "Expression": {
+                            "SourceRef": {
+                              "Entity": "StockMarket"
+                            }
+                          },
+                          "Name": "Variation",
+                          "Property": "Data"
+                        }
+                      },
+                      "Hierarchy": "Hierarquia de datas"
+                    }
+                  },
+                  "Level": "Ano"
+                }
+              },
+              "queryRef": "StockMarket.Data.Variation.Hierarquia de datas.Ano",
+              "nativeQueryRef": "Data Ano"
+            },
+            {
+              "field": {
+                "HierarchyLevel": {
+                  "Expression": {
+                    "Hierarchy": {
+                      "Expression": {
+                        "PropertyVariationSource": {
+                          "Expression": {
+                            "SourceRef": {
+                              "Entity": "StockMarket"
+                            }
+                          },
+                          "Name": "Variation",
+                          "Property": "Data"
+                        }
+                      },
+                      "Hierarchy": "Hierarquia de datas"
+                    }
+                  },
+                  "Level": "Mês"
+                }
+              },
+              "queryRef": "StockMarket.Data.Variation.Hierarquia de datas.Mês",
+              "nativeQueryRef": "Data Mês"
+            },
+            {
+              "field": {
+                "Aggregation": {
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "StockMarket"
+                        }
+                      },
+                      "Property": "Open"
+                    }
+                  },
+                  "Function": 1
+                }
+              },
+              "queryRef": "Sum(StockMarket.Open)",
+              "nativeQueryRef": "Open",
+              "displayName": "Open"
+            },
+            {
+              "field": {
+                "Aggregation": {
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "StockMarket"
+                        }
+                      },
+                      "Property": "High"
+                    }
+                  },
+                  "Function": 1
+                }
+              },
+              "queryRef": "Sum(StockMarket.High)",
+              "nativeQueryRef": "High",
+              "displayName": "High"
+            },
+            {
+              "field": {
+                "Aggregation": {
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "StockMarket"
+                        }
+                      },
+                      "Property": "Low"
+                    }
+                  },
+                  "Function": 1
+                }
+              },
+              "queryRef": "Sum(StockMarket.Low)",
+              "nativeQueryRef": "Low",
+              "displayName": "Low"
+            },
+            {
+              "field": {
+                "Aggregation": {
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "StockMarket"
+                        }
+                      },
+                      "Property": "Close"
+                    }
+                  },
+                  "Function": 1
+                }
+              },
+              "queryRef": "Sum(StockMarket.Close)",
+              "nativeQueryRef": "Close",
+              "displayName": "Close"
+            },
+            {
+              "field": {
+                "Aggregation": {
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "StockMarket"
+                        }
+                      },
+                      "Property": "Volume"
+                    }
+                  },
+                  "Function": 1
+                }
+              },
+              "queryRef": "Sum(StockMarket.Volume)",
+              "nativeQueryRef": "Volume",
+              "displayName": "Volume"
+            }
+          ]
+        }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "HierarchyLevel": {
+                "Expression": {
+                  "Hierarchy": {
+                    "Expression": {
+                      "PropertyVariationSource": {
+                        "Expression": {
+                          "SourceRef": {
+                            "Entity": "StockMarket"
+                          }
+                        },
+                        "Name": "Variation",
+                        "Property": "Data"
+                      }
+                    },
+                    "Hierarchy": "Hierarquia de datas"
+                  }
+                },
+                "Level": "Mês"
+              }
+            },
+            "direction": "Descending"
+          }
+        ]
+      }
+    },
+    "visualContainerObjects": {
+      "title": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Tabela de Valores Médios Por Mes'"
+                }
+              }
+            },
+            "bold": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            },
+            "alignment": {
+              "expr": {
+                "Literal": {
+                  "Value": "'center'"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "background": [
+        {
+          "properties": {
+            "transparency": {
+              "expr": {
+                "Literal": {
+                  "Value": "100D"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "stylePreset": [
+        {
+          "properties": {
+            "name": {
+              "expr": {
+                "Literal": {
+                  "Value": "'BoldHeader'"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "border": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "dropShadow": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}
