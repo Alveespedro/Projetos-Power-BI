@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "SemanticModel",
+    "displayName": "Dash_vendas_03"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "2817d411-1626-4492-a965-4b9d0e547228"
+  }
+}

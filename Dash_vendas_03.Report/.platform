@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "Report",
+    "displayName": "Dash_vendas_03"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "63827966-9059-4aad-9e3e-7f0d196c446e"
+  }
+}
